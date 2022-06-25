@@ -10,14 +10,23 @@
                 <div class="form-group">
                     <input type="hidden"
                         name="id"
-                        value="<%= car._id %>"
+                        <% if (car._id === "None") { %>
+                            value=''
+                        <% } else { %>
+                            value="<%= car._id %>"
+                        <% } %>
+                            
                     >
                     <label for="carTextField">Make</label>
                     <input type="text" class="form-control"
                         id="makeTextField"
                         placeholder="Enter the Car Make"
                         name="make" 
-                        value="<%= car.make %>"
+                        <% if (car.make === "None") { %>
+                            value=''
+                        <% } else { %>
+                            value="<%= car.make %>"
+                        <% } %>
                         required>
                 </div>
                 <div class="form-group">
@@ -26,7 +35,11 @@
                         id="modelTextField"
                         placeholder="Enter a model"
                         name="model" 
-                        value="<%= car.model %>"
+                        <% if (car.model === "None") { %>
+                            value=''
+                        <% } else { %>
+                            value="<%= car.model %>"
+                        <% } %>
                         >
                 </div>
                 <br />
@@ -37,7 +50,11 @@
                         id="YearTextField"
                         placeholder="2022"
                         name="year" 
-                        value="<%= car.year %>"
+                        <% if (car.year === "None") { %>
+                            value=''
+                        <% } else { %>
+                            value="<%= car.year %>"
+                        <% } %>
                         required>
                 </div>
                 <div class="form-group">
@@ -47,7 +64,11 @@
                     id="kilometersTextField"
                     placeholder="20"
                     name="kilometers" 
-                    value="<%= car.kilometers %>"
+                    <% if (car.kilometers === "None") { %>
+                        value=''
+                    <% } else { %>
+                        value="<%= car.kilometers %>"
+                    <% } %>
                     required>
                 </div>
 
@@ -58,7 +79,11 @@
                     id="doorsTextField"
                     placeholder="4"
                     name="doors" 
-                    value="<%= car.doors %>"
+                    <% if (car.doors === "None") { %>
+                        value=''
+                    <% } else { %>
+                        value="<%= car.doors %>"
+                    <% } %>
                     required>
                 </div>
 
@@ -69,7 +94,11 @@
                     id="seatsTextField"
                     placeholder="5"
                     name="seats" 
-                    value="<%= car.seats %>"
+                    <% if (car.seats === "None") { %>
+                        value=''
+                    <% } else { %>
+                        value="<%= car.seats %>"
+                    <% } %>
                     required>
                 </div>
 
@@ -79,7 +108,11 @@
                         id="colorTextField"
                         placeholder="Enter the color"
                         name="color" 
-                        value="<%= car.color %>"
+                        <% if (car.color === "None") { %>
+                            value=''
+                        <% } else { %>
+                            value="<%= car.color %>"
+                        <% } %>
                         >
                 </div>
 
@@ -90,7 +123,11 @@
                     id="priceTextField"
                     placeholder="9,999.99"
                     name="price" 
-                    value="<%= car.price %>"
+                    <% if (car.price === "None") { %>
+                        value=''
+                    <% } else { %>
+                        value="<%= car.price %>"
+                    <% } %>
                     required>
                 </div>
 

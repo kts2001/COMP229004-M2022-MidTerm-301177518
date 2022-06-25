@@ -9,7 +9,7 @@
             <!-- ------------------------ -->
             <!-- Fix the ADD button below -->
             <!-- ------------------------ -->
-            <a href="#" class="btn btn-primary align-self-end" role="button">
+            <a href="/cars/add" class="btn btn-primary align-self-end" role="button">
                 <i class="fas fa-plus-circle"></i> 
                 Add a new Car
             </a>                
@@ -44,21 +44,21 @@
                         <td class="text-center"><%= CarsList[i].price %></td>                        
                         <td class="text-center">
                             <a href="/cars/details/<%= CarsList[i]._id %>" class="btn btn-success btn-sm"> 
-                            <i class="fas fa-info"></i> </a>
+                            <i class="fas fa-info"></i>Details</a>
                         </td>
                         <td class="text-center">
                             <!-- ------------------------- -->
                             <!-- Fix the EDIT button below -->
                             <!-- ------------------------- -->
-                            <a href="#" class="btn btn-primary btn-sm">
-                            <i class="fas fa-pencil-alt"></i></a>
+                            <a href="/cars/edit/<%= CarsList[i]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt"></i>Edit</a>
                         </td>
                         <td class="text-center">
                             <!-- --------------------------- -->
                             <!-- Fix the DELETE button below -->
                             <!-- --------------------------- -->
-                            <a href="#" class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash-alt"></i></a>
+                            <a href="/cars/delete/<%= CarsList[i]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i>Delete</a>
                         </td>
                     </tr>
                 <% } %>
