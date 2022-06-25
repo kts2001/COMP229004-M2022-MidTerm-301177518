@@ -6,3 +6,4 @@ let controlerIndex = require('../controllers/index');
 router.get('/', controlerIndex.home);
 
 module.exports = router;
+
